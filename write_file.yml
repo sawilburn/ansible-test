@@ -1,0 +1,9 @@
+---
+- name: Write a file in the user's home directory
+  hosts: all
+  tasks:
+    - name: Create a file in the home directory
+      copy:
+        content: "This is a test file created by Ansible."
+        dest: ~/test_file.txt
+
